@@ -20,5 +20,5 @@ with st.form("Introduzca sus datos"):
     Fecha de nacimiento: {fecha_nac}
     Alergias: {alergias}
     """
-    
+    st.write(resumen)
     st.download_button("Descargar",resumen)
