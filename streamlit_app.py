@@ -9,7 +9,7 @@ with st.form("Introduzca sus datos"):
   
   if enviado:    
     st.write("Nombre",nombre)
-    if alergias.len>0:
+    if alergias.len()>0:
       st.write("Asegúrese de que ha especificado todas sus alergias.")            
     else:
       no_alergico = st.checkbox("Marque la casilla para confirmar que declara que no es alérgico")
