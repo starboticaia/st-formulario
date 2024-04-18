@@ -13,4 +13,4 @@ with st.form("Introduzca sus datos"):
     # la diferencia está en días
     edad = (hoy - fecha_nac)/365
     st.write("Nombre",nombre)
-    st.write("Edad",edad_dias)
+    st.write("Edad",edad)
