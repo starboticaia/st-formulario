@@ -17,7 +17,7 @@ with st.form("Introduzca sus datos"):
 
     resumen = f"""
     Nombre: {nombre}
-    Edad: {edad}
+    Fecha de nacimiento: {fecha_nac}
     Alergias: {alergias}
     """
     
