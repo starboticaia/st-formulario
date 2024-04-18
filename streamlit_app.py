@@ -9,7 +9,7 @@ with st.form("Introduzca sus datos"):
   enviado = st.form_submit_button("Enviar")
   
   if enviado:
-    hoy = date.today()
+    hoy = datetime.date.today()
     edad_dias = hoy - fecha_nac
     st.write("Nombre",nombre)
     st.write("Edad",edad_dias)
