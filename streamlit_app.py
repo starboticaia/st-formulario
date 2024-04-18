@@ -7,8 +7,7 @@ with st.form("Introduzca sus datos"):
   # El botón Enviar es obligatorio
   enviado = st.form_submit_button("Enviar")
   
-  if enviado:
-    hoy = datetime.date.today()      
+  if enviado:    
     st.write("Nombre",nombre)
     if alergias.length>0:
       st.write("Asegúrese de que ha especificado todas sus alergias.")            
