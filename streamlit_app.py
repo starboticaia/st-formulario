@@ -1,6 +1,6 @@
 import streamlit as st
 
-enviado = false
+enviado = False
 
 with st.form("Introduzca sus datos"):
   nombre = st.text_input("Nombre")
