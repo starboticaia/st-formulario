@@ -18,11 +18,7 @@ if enviado:
     if len(alergias)==0:    
       alergias = "Ninguna"
     
-    resumen = f"""
-    Nombre: {nombre}
-    Fecha de nacimiento: {fecha_nac}
-    Alergias: {alergias}
-    """
+    resumen = f"Nombre: {nombre}\nFecha de nacimiento: {fecha_nac}\nAlergias: {alergias}"
     
     st.write(resumen)
     st.download_button("Descargar",resumen)
