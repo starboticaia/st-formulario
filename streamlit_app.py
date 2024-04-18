@@ -13,14 +13,16 @@ with st.form("Introduzca sus datos"):
 if enviado:    
   st.write("Nombre",nombre)
   confirmado = st.checkbox("Marque la casilla para confirmar que declara que ha revisado las alergias.")
-  if len(alergias)==0:    
-    alergias = "Ninguna"
 
   if confirmado:
+    if len(alergias)==0:    
+      alergias = "Ninguna"
+    
     resumen = f"""
     Nombre: {nombre}
     Fecha de nacimiento: {fecha_nac}
     Alergias: {alergias}
     """
+    
     st.write(resumen)
     st.download_button("Descargar",resumen)
