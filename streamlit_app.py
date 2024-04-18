@@ -10,6 +10,7 @@ with st.form("Introduzca sus datos"):
   
   if enviado:
     hoy = datetime.date.today()
-    edad_dias = hoy - fecha_nac
+    # la diferencia está en días
+    edad = (hoy - fecha_nac)/365
     st.write("Nombre",nombre)
     st.write("Edad",edad_dias)
