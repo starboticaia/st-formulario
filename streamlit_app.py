@@ -22,4 +22,4 @@ with st.form("Introduzca sus datos"):
     Alergias: {alergias}
     """
     
-    st.download()
+    st.download_button('Descargar resumen',resumen)   
