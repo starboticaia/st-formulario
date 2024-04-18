@@ -12,16 +12,15 @@ with st.form("Introduzca sus datos"):
 # no se puede poner otro botón dentro de un formulario
 if enviado:    
   st.write("Nombre",nombre)
-  if len(alergias)>0:
-    st.write("Asegúrese de que ha especificado todas sus alergias.")            
-  else:
-    no_alergico = st.checkbox("Marque la casilla para confirmar que declara que no es alérgico")
+  confirmado = st.checkbox("Marque la casilla para confirmar que declara que ha revisado las alergias.")
+  if len(alergias)==0:    
     alergias = "Ninguna"
 
-  resumen = f"""
-  Nombre: {nombre}
-  Fecha de nacimiento: {fecha_nac}
-  Alergias: {alergias}
-  """
-  st.write(resumen)
-  st.download_button("Descargar",resumen)
+  if confirmado:
+    resumen = f"""
+    Nombre: {nombre}
+    Fecha de nacimiento: {fecha_nac}
+    Alergias: {alergias}
+    """
+    st.write(resumen)
+    st.download_button("Descargar",resumen)
